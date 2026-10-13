@@ -1,0 +1,66 @@
+* {
+  background-color: beige;
+}
+header h1{
+    text-align: center;
+    color: blue;
+    margin: 7px;
+}
+body{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.foto img {
+  width: 15%;
+  object-fit: cover;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 20%;
+}
+
+.info-contenedor {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Recuadro de Información Personal */
+.info-personal {
+  flex: 1;
+  border: 2px solid #134f8b; /* Borde azul alrededor del cuadro */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.redes-contenedor {
+  width: 180px; /* Un ancho adecuado para los botones a la derecha */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*REDEEESD*/
+.boton-redes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.boton-redes a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease; /*este poner en poryecto */
+    
+}
+.boton-redes a:hover {
+  background-color: blue;
+  transform: translateY(-4px);
+}
