@@ -1,5 +1,8 @@
 * {
-  background-color: beige;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 3px 5px;
+
 }
 header h1{
     text-align: center;
@@ -15,7 +18,8 @@ body{
   object-fit: cover;
   display: flex;
   margin: 0 auto;
-  border-radius: 20%;
+  border-radius: 20px;
+  box-shadow: #071c30  0px 2px 9px;
 }
 
 .info-contenedor {
@@ -26,21 +30,26 @@ body{
   align-items: stretch;
   justify-content: space-between;
   width: 100%;
+  background-color: whitesmoke;
 }
 
 /* Recuadro de Información Personal */
 .info-personal {
   flex: 1;
-  border: 2px solid #134f8b; /* Borde azul alrededor del cuadro */
+  border: 2px solid #071c30; /*Borde azul alrededor del cuadro*/
   border-radius: 8px;
   padding: 20px;
 }
 
 .redes-contenedor {
-  width: 180px; /* Un ancho adecuado para los botones a la derecha */
-  display: flex;
+  width: 180px; /*Ancho de los botones*/
+  display: 1;
   flex-direction: column;
   align-items: center;
+  border: 2px solid #071c30; /*Borde azul alrededor del cuadro */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
 }
 
 /*REDEEESD*/
@@ -63,4 +72,59 @@ body{
 .boton-redes a:hover {
   background-color: blue;
   transform: translateY(-4px);
+  color: white;
+}
+/*PREFIL*/
+.perfil{
+  margin: 0 auto 20px auto;
+  text-align: justify;
+}
+.perfil h2{
+  text-align: center;
+}
+
+.formacion-academica {
+  margin: 0 auto 20px auto;/*El segundo 20px sirve aprad darle espacio con el apardato de abajo*/
+  border: 2px solid #071c30;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+/*Cursos*/
+.cursos{
+  margin: 0 auto 20px auto;
+  border: 2px solid #071c30;
+  display: flex;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+/*Experiencia laboral*/
+
+.experiencia-laboral{
+  margin: 0 auto 20px auto;
+  border: 2px solid #071c30;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+/*Referencias*/
+.referencia{
+  margin: 0 auto 20px auto;
+  border: 2px solid #071c30;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  text-align: left; 
+  background-color: whitesmoke;
+}
+
+/*LISTAS*/
+.lista-formacion{
+  list-style: none;
+  
 }
